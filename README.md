@@ -23,12 +23,17 @@ docker-compose up -d
 ## 📂 프로젝트 구조
 ```
 📁 kotlin-spring-kafka-docker
-├── 📂 src/main/kotlin/com/example
-│   ├── 📄 KafkaProducer.kt           # Kafka 메시지 프로듀서
-│   ├── 📄 KafkaConsumer.kt           # Kafka 메시지 컨슈머
-│   ├── 📄 Application.kt             # Spring Boot 메인 애플리케이션
+├── 📂 src
+│   ├── 📄 docker-compose.yml         # Kafka, App 서버 통합 docker-compose
+│   ├── 📄 Dockerfile.yml             # app 서버 Dockerfile
+│   └── 📂 /main/kotlin/com/example/kafka
+│       ├── 📄 createTopic.sh                # Kafka 토픽 생성
+│       ├── 📄 batchConsumer.kt              # Kafka 메시지 batch consumer
+│       ├── 📄 consumer.kt                   # Kafka 메시지 consumer
+│       ├── 📄 producer.kt                   # Kafka 메시지 producer
+│       ├── 📄 KopringProjectApplication.kt  # Spring Boot 메인 애플리케이션
 ├── 📂 kafkaConfig
-│   ├── 📄 docker-compose.yml         # Kafka 관련 Docker 설정
+│   ├── 📄 docker-compose.yml         # Kafka only docker-compose
 │   └── 📂 kafka
 │       ├── 📄 createTopic.sh               # Kafka 토픽 생성
 │       ├── 📄 deleteTopic.sh               # Kafka 토픽 삭제
