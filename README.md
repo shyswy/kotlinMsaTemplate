@@ -11,8 +11,7 @@
 ## 🚀 실행 방법
 ### 1. 프로젝트 클론
 ```sh
-git clone https://github.com/your-repo/kotlin-spring-kafka-docker.git
-cd kotlin-spring-kafka-docker
+git clone https://github.com/your-repo/kotlin-spring-kafka-docker.git](https://github.com/shyswy/kotlinMsaTemplate.git
 ```
 
 ### 2. Docker Compose 실행
