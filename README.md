@@ -21,7 +21,7 @@ docker-compose up -d
 
 ## 📂 프로젝트 구조
 ```
-📁 kotlin-spring-kafka-docker
+📁 kotlinMsaTemplate
 ├── 📂 src
 │   ├── 📄 docker-compose.yml         # Kafka, App 서버 통합 docker-compose
 │   ├── 📄 Dockerfile.yml             # app 서버 Dockerfile
@@ -45,8 +45,6 @@ docker-compose up -d
 │       ├── 📄 getConsumerGroupInfo.sh      # 컨슈머 그룹 상세 정보 조회
 │       ├── 📂 kafka_2.12-2.5.0             # Kafka 바이너리 폴더
 │       ├── 📂 message                      # 메시지 샘플 파일
-├── 📄 Dockerfile                    # 앱 서버 Docker 설정
-├── 📄 docker-compose.yml            # 전체 Docker Compose 설정
 ├── 📄 build.gradle.kts              # Gradle 빌드 스크립트
 └── 📄 README.md
 ```
